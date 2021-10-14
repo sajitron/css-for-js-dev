@@ -10,45 +10,64 @@ body {
 }
 
 /* Add styles here! */
+h1, h2, h3  {
+  margin: 0;
+}
+
+html {
+  font-size: 1.125rem;
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.intro-chunk {
+  padding: 96px 0px;
+  max-width: 500px;
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
 header {
-  padding-top: 48px;
-  padding-bottom: 12px;
-  margin: auto;
-  width: 50%;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
-header h1{
-  padding-bottom: 24px;
-}
-
-header p {
-  width: 93%;
-}
-
-section.max-width-wrapper {
+main {
   background-color: hsl(0deg, 0%, 60%);
-  width: 90%;
-  margin: auto;
-  padding: 48px 128px;
+  padding: 96px 0px;
 }
 
 .card {
-  background-color: hsl(0deg, 0%, 100%);
-  padding: 16px;
-  padding-top: 0px;
+  background-color: white;
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
-.indented-heading {
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.indented-heading  {
   background-color: hsl(45deg, 100%, 50%);
+  margin-left: -32px;
+  margin-top: -16px;
+  padding: 16px 32px;
   width: fit-content;
-  padding: 16px;
-  margin-left: -24px;
-  border: 1px transparent;
-  margin-top: 8px;
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
 }
 
-@media screen and (min-width: 768px) {
-  header p {
-    width: 50%;
-  }
+.card p:last-child {
+  margin-bottom: 0;
 }
+
